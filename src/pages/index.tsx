@@ -33,17 +33,17 @@ const IndexPage = () => {
           <ul className="flex">
             <li className="flex-1">
               <a href="https://instagram.zahlenip.de/" target="_blank">
-                <FontAwesomeIcon icon={faInstagram as IconProp} size="2x" />
+                <FontAwesomeIcon icon={faInstagram as IconProp} size="2x" className="transition-transform hover:scale-125 hover:text-pink-500" />
               </a>
             </li>
             <li className="text-center flex-1">
               <a href="https://youtube.zahlenip.de/" target="_blank">
-                <FontAwesomeIcon icon={faYoutube as IconProp} className="hover:text-red-500" size="2x" />
+                <FontAwesomeIcon icon={faYoutube as IconProp} className="transition-transform hover:scale-125 hover:text-red-500" size="2x" />
               </a>
             </li>
             <li className="text-right flex-1">
               <a href="https://twitter.zahlenip.de/" target="_blank">
-                <FontAwesomeIcon icon={faTwitter as IconProp} className="hover:text-blue-500" size="2x" />
+                <FontAwesomeIcon icon={faTwitter as IconProp} className="transition-transform hover:scale-125 hover:text-blue-500" size="2x" />
               </a>
             </li>
           </ul>
