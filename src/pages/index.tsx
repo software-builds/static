@@ -13,7 +13,7 @@ const IndexPage = () => {
       <title>PLK</title>
       <div className="text-white flex justify-center items-center flex-1 max-w-2xl">
         <div className="p-5">
-          <div className="hover:scale-105 transition-transform mx-auto border-red-800 border-8 m-10 h-52 w-52 overflow-hidden rounded-full align-middle">
+          <div className="hover:scale-105 hover:rotate-6 transition-transform mx-auto border-red-800 border-8 m-10 h-52 w-52 overflow-hidden rounded-full align-middle">
             <img className="w-full" src={'./static/logo.jpg'} alt="" />
           </div>
 
@@ -38,7 +38,7 @@ const IndexPage = () => {
             </li>
             <li className="text-center flex-1">
               <a href="https://youtube.zahlenip.de/" target="_blank">
-                <FontAwesomeIcon icon={faYoutube as IconProp} className="transition-transform hover:scale-125 hover:text-red-500" size="2x" />
+                <FontAwesomeIcon icon={faYoutube as IconProp} className="transition-transform hover:scale-125 hover:text-red-600" size="2x" />
               </a>
             </li>
             <li className="text-right flex-1">
