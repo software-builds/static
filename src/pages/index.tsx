@@ -5,6 +5,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
   faInstagram, faLinkedin, faTwitter
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from "gatsby";
 
 // redirects
 const redirects = {
@@ -34,6 +35,11 @@ const IndexPage = () => {
             <li>👀 interested in programming languages and techonolgies.</li>
             <li>🌱 learning terraforming, java and php constructions.</li>
             <li>💞️ looking to collaborate on huge, small and own projects.</li>
+            <hr className="my-4" />
+            <div className="flex justify-around">
+              <Link className="hover:text-red-400" to="impressum">Impressum</Link>
+              <Link className="hover:text-red-400" to="datenschutz">Datenschutz</Link>
+            </div>
           </ul>
           <hr className="my-4" />
           <ul className="flex">
