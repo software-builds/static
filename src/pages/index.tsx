@@ -21,12 +21,12 @@ const IndexPage = () => {
       <title>PLK</title>
       <div className="text-white flex justify-center items-center flex-1 max-w-2xl">
         <div className="p-5">
-          <div className="hover:scale-105 hover:rotate-6 transition-transform mx-auto border-red-800 border-8 m-10 h-52 w-52 overflow-hidden rounded-full align-middle">
+          <div className="hover:scale-105 hover:rotate-6 transition-transform mx-auto border-red-800 border-8 m-10 h-44 w-44 md:h-52 md:w-52 overflow-hidden rounded-full align-middle">
             <img className="w-full" src={'./static/logo.jpg'} alt="" />
           </div>
           <h1 className="font-bold">Phil Leon Kersting</h1>
           <hr className="my-4" />
-          <ul className="font-mono text-sm md:text-lg">
+          <ul className="font-mono text-xs md:text-lg">
             <li>
               👋 Hi, I’m <a href="https://github.com/lamacode" target="_blank" className="text-blue-300">
                 @lamacode
@@ -35,12 +35,12 @@ const IndexPage = () => {
             <li>👀 interested in programming languages and techonolgies.</li>
             <li>🌱 learning terraforming, java and php constructions.</li>
             <li>💞️ looking to collaborate on huge, small and own projects.</li>
-            <hr className="my-4" />
+          </ul>
+          <hr className="my-4" />
             <div className="flex justify-around">
               <Link className="hover:text-red-400" to="impressum">Impressum</Link>
               <Link className="hover:text-red-400" to="datenschutz">Datenschutz</Link>
             </div>
-          </ul>
           <hr className="my-4" />
           <ul className="flex">
             <li className="flex-1">

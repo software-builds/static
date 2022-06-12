@@ -1,5 +1,4 @@
 import type { GatsbyConfig } from "gatsby"
-
 const config: GatsbyConfig = {
   siteMetadata: {
     siteUrl: `https://zahlenip.de`,
@@ -18,6 +17,12 @@ const config: GatsbyConfig = {
         display: `minimal-ui`,
         icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        generateMatchPathRewrites: true
+      }
     }
   ],
 }
