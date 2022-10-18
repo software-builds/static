@@ -9,9 +9,7 @@ import { Link } from "gatsby";
 
 // redirects
 const redirects = {
-  twitter: "https://twitter.com/lamacode0",
-  instagram: "https://instagram.com/philleonkersting",
-  linkedin: "https://www.linkedin.com/in/phil-leon-kersting-ba6866220/"
+  instagram: "https://instagram.com/softwarebuilds",
 }
 
 // markup
@@ -21,56 +19,35 @@ const IndexPage = () => {
       <title>PLK</title>
       <div className="text-white flex justify-center items-center flex-1 max-w-2xl">
         <div className="p-5">
-          <div className="hover:scale-105 hover:rotate-6 transition-transform mx-auto border-red-800 border-8 m-10 h-44 w-44 md:h-52 md:w-52 overflow-hidden rounded-full align-middle">
-            <img className="w-full" src={'./static/logo.jpg'} alt="" />
+          <div className="hover:scale-105 hover:rotate-6 transition-transform mx-auto border-red-800 border-8 m-10 h-32 w-32 md:h-32 md:w-32 overflow-hidden rounded-full align-middle">
+            <img className="w-full" src={'./static/logo.png'} alt="" />
           </div>
-          <h1 className="font-bold">Phil Leon Kersting</h1>
-          <hr className="my-4" />
-          <ul className="font-mono text-xs md:text-lg">
-            <li>
-              👋 Hi, I’m <a href="https://github.com/lamacode" target="_blank" className="text-blue-300">
-                @lamacode
-              </a> and i’m...
-            </li>
-            <li>👀 interested in programming languages and techonolgies.</li>
-            <li>🌱 learning terraforming, java and php constructions.</li>
-            <li>💞️ looking to collaborate on huge, small and own projects.</li>
-          </ul>
-          <hr className="my-4" />
-            <div className="flex justify-around">
-              <Link className="hover:text-red-400" to="impressum">Impressum</Link>
-              <Link className="hover:text-red-400" to="datenschutz">Datenschutz</Link>
-            </div>
-          <hr className="my-4" />
-          <ul className="flex">
-            <li className="flex-1">
-              <a href={redirects.instagram} target="_blank">
+          <div className="flex flex-col space-y-3 items-center">
+            <h1 className="flex items-center font-bold">Software Builds</h1>
+            <a href={redirects.instagram} target="_blank">
                 <FontAwesomeIcon 
                   icon={faInstagram as IconProp} 
                   size="2x" 
                   className="transition-transform hover:scale-125 hover:text-pink-500" 
                 />
               </a>
+          </div>
+          <hr className="my-4" />
+          <ul className="font-mono text-xs md:text-base">
+            <li>
+              👋 Hi, I’m <a href="https://github.com/software-builds" target="_blank" className="text-blue-300">
+                @software-builds
+              </a> and i’m...
             </li>
-            <li className="text-center flex-1">
-              <a href={redirects.linkedin} target="_blank">
-                <FontAwesomeIcon 
-                  icon={faLinkedin as IconProp}
-                  className="transition-transform hover:scale-125 hover:text-blue-500" 
-                  size="2x" 
-                />
-              </a>
-            </li>
-            <li className="text-right flex-1">
-              <a href={redirects.twitter} target="_blank">
-                <FontAwesomeIcon 
-                  icon={faTwitter as IconProp} 
-                  className="transition-transform hover:scale-125 hover:text-blue-500" 
-                  size="2x" 
-                  />
-              </a>
-            </li>
+            <li>👀 interested in programming languages and techonolgies.</li>
+            <li>🌱 learning terraforming, java and php constructions.</li>
+            <li>💞️ looking to collaborate on huge, small and own projects.</li>
           </ul>
+            <div className="flex justify-around">
+              {/* <Link className="hover:text-red-400" to="impressum">Impressum</Link> */}
+              {/* <Link className="hover:text-red-400" to="datenschutz">Datenschutz</Link> */}
+            </div>
+          <hr className="my-4" />
         </div>
       </div>
       <div className="w-full flex h-2">
